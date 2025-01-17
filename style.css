@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid__container{
+  display: grid;
+  height: 100%;
+  grid-template-columns: minmax(200px,1fr) 6fr;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding:20px;
+  background: rgb(68, 164, 253);
+}
+
+.sidebar .logo{
+  display: flex;
+  align-items: center;
+  color:white;
+  gap:1em;
+  margin-bottom: 4em;
+}
+
+.sidebar .logo img{
+  width: 50px;
+  height: 50px;
+}
+
+.navigation{
+  display: grid;
+  gap:30px;
+}
+
+.navigation__item img{
+  width: 25px;
+  height: 25px;
+  
+}
+
+.navigation__item{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap:10px;
+  font-size: 23px;
+  cursor: pointer;
+  color:white;
+}
+
+.navigation__item:nth-child(6){
+  margin-bottom: 2em;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  background: rgb(255, 255, 255);
+}
+
+.main .header{
+  display: grid;
+  padding: 20px 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header img{
+  width: 25px;
+  height: 25px;
+}
+
+.upper__header{
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.upper__header .left__part{
+display: grid;
+align-items: center;
+}
+
+.upper__header .right__part{
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap:20px;
+  align-items: center;
+  font-weight: 700;
+}
+
+.right__part .profile__picture{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.lower__header{
+  display: grid;
+  grid-template-columns: 1fr 25%;
+}
+
+.lower__header .left__part {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  /* background-color: violet; */
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.lower__header .left__part p:nth-child(1){
+  font-size: 15px;
+}
+
+.lower__header .left__part img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.lower__header .right__part{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lower__header .right__part .button{
+  background: #1b6fbe;
+  color:white;
+  width: 100px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.content{
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows:minmax(200px,400px) 1fr;
+}
+
+.projects{
+  /* background: violet; */
+  grid-row:1/3;
+}
+
+.projects h1{
+  margin-bottom: 2rem;
+}
+
+.projects__container{
+  display: grid;
+  padding: 0 2em 0 1em;
+  grid-template-columns: 1fr 1fr;
+  gap:30px;
+}
+
+.project__card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.3);
+  border-left:7px solid rgb(79, 96, 248);
+  border-top-left-radius:8px;
+  border-bottom-left-radius: 8px;
+}
+.project__card h3{
+  margin-bottom: 10px;
+ 
+}
+
+.project__card .buttons{
+  display: flex;
+  justify-content:flex-end;
+}
+
+.project__card .buttons img{
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.announcements{
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+  margin-bottom: 1em;
+}
+
+.announcements h1, .trendings h1,.projects h1{
+  margin-bottom: 0.3em;
+  font-size: 1.4em;
+}
+
+.announcement h3, .trending h3{
+  font-size: 1em;
+}
+.announcement p{
+  color:#4c4e4f;;
+}
+.announcement{
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+
+.trendings{
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+  padding: 1em 1em 0 1em;
+  border-radius: 12px;
+}
+
+.trending{
+  display: flex;
+  align-items: center;
+  padding: 0 1em 0 1em;
+  margin-bottom: 1em;
+}
+
+.trending img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+
+.trending p{
+  font-size: 0.8em;
+  color:#4c4e4f;
+}
